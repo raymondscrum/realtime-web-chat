@@ -1,0 +1,20 @@
+extends layout
+
+block append head
+    script(src="/socket.io/socket.io.js")
+    script(src="/javascripts/jquery/jquery-1.7.min.js")
+    script(src="/javascripts/chat.js")
+
+block content
+    div.container
+        div.row
+            div.panel.panel-default
+                div.panel-heading
+                    Panel Realtime Web Chat
+                div.panel-body.fixed-panel
+                    div#messages
+                div.input-footer
+                    div.input-group
+                        input#txt_msg.form-control(type="text")
+                        span.input-group-btn
+                            button#btn_send.btn.btn-warning Send
