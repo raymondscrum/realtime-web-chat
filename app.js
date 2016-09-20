@@ -30,6 +30,7 @@ app.get('/', routes.index);
 var appPort = 3000;
 server.listen(appPort);
 console.log("Server is listening on port " + appPort);
+console.log("Your app should now be running on http://localhost:"+ appPort + "/");
 
 io.on('connection', function (socket) {
     socket.on('message', function (msg) {
