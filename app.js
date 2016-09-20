@@ -1,6 +1,5 @@
 // packages
 var express = require('express');
-var jade = require('jade');
 var path = require('path');
 var http = require('http');
 var bodyParser = require('body-parser');
@@ -16,7 +15,7 @@ var io = require('socket.io').listen(server);
 
 // view options
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.set('view options', { layout: false });
 
 // static content being served
