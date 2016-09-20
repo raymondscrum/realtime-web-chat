@@ -29,3 +29,10 @@ Start you application
 
 Your app should now be running on [localhost:3000](http://localhost:3000/).
 
+## Folder structure
+
+* app.js - initializes the app and glues everything together
+* package.json - Hold the package that your app depends on and their version
+* public/ - contains all static files like images, styles and javascript
+* routes/ - defines your app routes and their logic
+* views/ - provides templates which are rendered and served by your routes

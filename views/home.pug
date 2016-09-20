@@ -1,3 +1,7 @@
+//- For more information about Pug, please checkout
+//- https://pugjs.org/api/getting-started.html
+//- https://naltatis.github.io/jade-syntax-docs
+
 extends layout
 
 block append head
@@ -8,13 +12,4 @@ block append head
 block content
     div.container
         div.row
-            div.panel.panel-default
-                div.panel-heading
-                    h4= title
-                div.panel-body.fixed-panel
-                    div#messages
-                div.input-footer
-                    div.input-group
-                        input#txt_msg.form-control(type="text")
-                        span.input-group-btn
-                            button#btn_send.btn.btn-warning Send
+            h4= title

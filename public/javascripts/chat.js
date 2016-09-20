@@ -1,22 +1,21 @@
+// For more information about Socket.io i refer you to http://socket.io/
 var socket = io.connect();
 
 socket.on('connect', function () {
-    socket.send('A client connected.');
+    // send message to server that a new client is connected
 });
 
 socket.on('message', function (message) {
-    $('div#messages').append($('<p>'), message);
+    // Process the broadcast messages from the server, by showing
+    // showing them in the chat window
 });
 
 socket.on('disconnect', function () {
-    console.log('disconnected');
+    // send message to server that a client is disconnected
 });
 
 
 $(document).ready(function(){
-    $('#btn_send').click(function (event) {
-	socket.send($('#txt_msg').val());
-	$('#txt_msg').val('');
-    });
+    // Send text of input field to server when the button is pressed
 });
 
