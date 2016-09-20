@@ -36,3 +36,16 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
 * **public/** - contains all static files like images, styles and javascript
 * **routes/** - defines your app routes and their logic
 * **views/** - provides templates which are rendered and served by your routes
+
+## Exercise
+You have just cloned an application skeleton for an Realtime web chat. Unfortunaly this isn't an
+working chat application, and it's up to you to fill in the missing blanks. The missing blanks are
+marked with the label TODO.
+
+## Additional Exercise
+As additional exercises you could do the following:
+
+* Add an extra screen where you can enter you username
+* Show which user has send a certain message
+* Show a list with all users that are in the chat
+* Show messages in different colors depending on user
