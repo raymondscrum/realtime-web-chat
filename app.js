@@ -32,6 +32,6 @@ console.log("Your app should now be running on http://localhost:"+ appPort + "/"
 
 io.on('connection', function (socket) {
     socket.on('message', function (msg) {
-        // send broadcast message to all clients
+        // TODO send broadcast message to all clients
     });
 });
